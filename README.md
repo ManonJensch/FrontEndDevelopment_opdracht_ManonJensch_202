@@ -59,7 +59,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Ik heb naar meerdere dingen gekeken zoals, de koppen (headings), de links en knoppen. Verder heb ik ook gekeken naar de WCAG (Web Content Accesslibilty Guidelines).
 
   Lijst met je bevindingen die in de test naar voren kwamen:
-  ### Screenreader:
+  #### Screenreader:
   - De headings zijn niet goed op volgorde (zie afbeelding 1.1). 
   - De navigatie links zijn allemaal in hoofdletters (capslock) en de rest is in kleine letters (zie afbeelding 1.2). 
   - De uitleg van andere knoppen is ook allemaal in hoofdletters (capslock) (zie afbeelding 1.3).
@@ -71,7 +71,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="/readme-images/screenreader_capslock.png" width="150px" alt="Screenshot van screenreader koppen in capslock">    
   Afbeelding 1.3
 
-  ### Web Content Accessibility Guidelines:
+  #### Web Content Accessibility Guidelines:
   - Hun buttons zijn allemaal consistent.
   - Ze gebruiken veel engelse woorden op hun website, maar hun lang attribute in hun HTML is nederlands. Hierdoor worden de engelse woorden dan ook op zijn nederlands gezegd door de screenreader. 
   - Met tab kan je bij sommige dingen zien dat het klikbaar is, maar ook bij heel veel dingen niet. 
