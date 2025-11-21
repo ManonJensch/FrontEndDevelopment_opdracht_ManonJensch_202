@@ -1,0 +1,76 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+
+/****************/
+/* HEADER */
+/****************/
+header {
+	background-color: var(--color-background);
+}
+
+
+header h1 {
+	flex-shrink: 0;
+	
+}
+
+header h1 svg{
+	width:5em;
+	
+}
+
+header li {
+	list-style:none;
+}
+
+header img {
+	width: 3em;
+}
+
+nav{
+	display: flex;
+	background-color: var(--color-background);
+	justify-content: space-between ;
+	align-items:center;
+
+	
+}
+
+menu{
+	display:flex;
+	
+}
+
+header ul{
+	display:flex;
+	
+}

@@ -118,17 +118,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code):
+  - Ik vond het wel weer even lastig om dan zo weer aan de code te beginnen. Ik moet dan weer altijd even inkomen met het schrijven ervan en wat waar ook alweer hoort. 
+  - Nadat ik dan bezig was met de code vanuit de breakdownschets ging het eigenlijk wel snel. 
+  - Wat ik ook wel lastig vond was toen ik het logo van Loavies wilde zoeken via de website om op te slaan, kon ik hem niet vinden. Toen vroeg ik aan een van de studentassistenten hoe ik dit het beste kon doen. Hij vertelde mij toen dat ik ook kon kijken in de code van de website en daaruit de svg kon halen. Dan staat het logo er in aan de hand van code.
+  <img src="/readme-images/code_screenshot1.png" width="150px" alt="Screenshot html code">
+  <img src="/readme-images/code_screenshot2.png" width="150px" alt="Screenshot css code">
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Manon     
+  - In css dingen aanroepen. Wat je het beste voor elk ding kan gebruiken. (lnt-of-type() etc).     
+
+  Gloria    
+  - Ze wilt wat vragen over het menu en over dingen aanroepen met css.         
+  
+  Bob          
+  - Hij wilt vragen hoe je automatische animaties makkelijk in de website kan maken. 
+ 
+  Rosa             
+  - Ze wilt iets vragen over javascript.
 
 
   ### Verslag van meeting
