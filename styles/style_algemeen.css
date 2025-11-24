@@ -16,10 +16,13 @@
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
+	--color-background:#fff;
 }
 
-
+@font-face {
+	font-family: "InterBold";
+	src: url(/fonts/Inter-Bold.woff2);
+}
 
 
 
@@ -35,42 +38,48 @@
 /****************/
 header {
 	background-color: var(--color-background);
+	position:sticky;
+  	top:0;
+	width:100vw;
 }
 
-
 header h1 {
-	flex-shrink: 0;
-	
+	flex-shrink: 0;	
 }
 
 header h1 svg{
-	width:5em;
-	
+	width:4em;
 }
 
 header li {
 	list-style:none;
 }
 
-header img {
-	width: 3em;
-}
-
 nav{
 	display: flex;
 	background-color: var(--color-background);
 	justify-content: space-between ;
-	align-items:center;
+	align-items:center;	
+}
 
-	
+nav img{
+	width:1.5em;
 }
 
 menu{
 	display:flex;
-	
 }
 
 header ul{
 	display:flex;
-	
+
+}
+
+footer ul{
+	height: 4em;
+	width:100vw;
+}
+
+footer li {
+	list-style: none;
 }

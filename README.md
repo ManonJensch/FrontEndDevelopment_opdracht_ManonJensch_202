@@ -130,7 +130,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   samen met je groepje opstellen
 
   Manon     
-  - In css dingen aanroepen. Wat je het beste voor elk ding kan gebruiken. (lnt-of-type() etc).     
+  - In css dingen aanroepen. Wat je het beste voor elk ding kan gebruiken. (lnt-of-type() etc).  
+  - Afbeeldingen uit een section kleiner maken als andere afbeeldingen, dan gewoon classes gebruiken?
+  - Font van de website in je code zetten?
+  - Border om afbeelding heen zetten.
+  - Footer einde
+  - Tekst in button een kleur geven
 
   Gloria    
   - Ze wilt wat vragen over het menu en over dingen aanroepen met css.         
@@ -145,10 +150,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik moet betere alt teksten neerzetten. Ik moet het aan de hand van een zin uitleggen. Ik zou hiervoor ook chatGPT mogen gebruiken.
+  - Mijn code is al goed ingesprongen en ik was daarmee ook lekker bezig. 
+  - Ik moet opletten dat ik geen buttons gebruik in plaats van links. Ik moet proberen buttons echt te gebruiken voor de dingen die op mijn pagina komen, zoals iwnkelwagen en misschien een andere pop-up. Als je naar een andere pagina wordt doorverwezen is het altijd een link. Dit moet ik dus nog even goed bekijken en aanpassen.
+  - Als ik dan dit linkje een kleur wil geven dan kan ik background-color: black: color: white; gebruiken. 
+  - Ik gebruik heel veel li elementen, omdat dat dan n iet semantisch genoeg is kan ik soms beter article er nog tussen zetten. Dus: section - ul - li - article etc, wat er dan allemaal in staat. 
 
 </details>
 
