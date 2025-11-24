@@ -10,7 +10,7 @@
 
 	<link href="/styles/style_algemeen.css" rel="stylesheet">
     <link href="/styles/style_homepagina.css" rel="stylesheet">
-    <link href="/styles/style_partypagina.css" rel="stylesheet">
+    <!-- <link href="/styles/style_partypagina.css" rel="stylesheet"> -->
 
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
@@ -19,16 +19,39 @@
 	
 
 	<header>
-        <nav>
+       
             <menu>
 				<li>
-                    <button><img src="/images/menu_svgrepo_com.svg" alt="Menu icon"></img></button>
-                </li>
-                <li>
-                    <button><img src="/images/search_svgrepo_com.svg" alt="Zoek icon"></img></button>
-                </li>
+					<button aria-hidden="true"><img src="/images/menu_svgrepo_com.svg" alt="" /></button>
+				</li>
+				<li>
+					<button><img src="/images/search_svgrepo_com.svg" alt="Zoek icon"></img></button>
+				</li>
             </menu>
-
+		<nav>	
+			<ul>
+				<li><a href="#">Nieuw</a></li>
+				<li><a href="#">Party</a></li>
+				<li><a href="#">The gift shop</a></li>
+				<li><a href="#">Kleding</a></li>
+				<li><a href="#">Bestsellers</a></li>
+				<li><a href="#">Jurken</a></li>
+				<li><a href="#">Broeken & Jeans</a></li>
+				<li><a href="#">Jassen</a></li>
+				<li><a href="#">Shorts & Skirts</a></li>
+				<li><a href="#">Accessoires</a></li>
+				<li><a href="#">Schoenen</a></li>
+				<li><a href="#">Sale</a></li>
+				<li><a href="#">Giftcard</a></li>
+				<li><a href="#">Campagnes</a></li>
+				<li><a href="#">Mijn account</a></li>
+				<li><a href="#">Reloaved</a></li>
+				<li><a href="#">Careers at LOAVIES</a></li>
+				<li><a href="#">Help & FAQ</a></li>
+				<li><a href="#">Bezorgingen</a></li>
+				<li><a href="#">Follow us on TikTok</a></li>
+			</ul>
+		</nav>
 			<!-- html code van de website zelf via inspecteren om het logo te krijgen -->
             <h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="3 0 205 21" class="app-logo app-header__logo"><path fill="currentColor" d="M5.9.3H3v20.4h14v-2.8H5.9V.3zM42.8 0C37 0 32.5 4.6 32.5 10.5S36.9 21 42.8 21c5.8 0 10.4-4.6 10.4-10.5S48.7 
 				0 42.8 0zm0 18.3c-4.2 0-7.4-3.4-7.4-7.9 0-4.4 3.2-7.7 7.4-7.7s7.4 3.4 7.4 7.9c0 4.4-3.1 7.7-7.4 7.7zM77.5.2l-9.3 20.5h3l2.4-5.2h10.3l2.3 5.2h3.2L80.1.2h-2.6zm-2.7 12.6l3.9-8.9 3.9 8.9h-7.8zm36.9 4L104.9.3h-3.1l8.8 20.5h2.3L121.7.3h-3.2l-6.8 16.5zM139 
@@ -49,7 +72,7 @@
                     <a href=""><img src="/images/bag_svgrepo_com.svg" alt="Winkelmand icon"></a>
                 </li>
             </ul>
-        </nav>
+        
     </header>
 
 
@@ -111,27 +134,23 @@
             <a href=""></a>
             <a href="">
                 <img src="/images/model_afbeelding_shop_nieuw.jpg" alt="Model afbeelding voor shop nieuw"></img>
-                <button>Shop New</button>
+                Shop New
             </a>
         </section>
 
         <section>
             <ul>
                 <li>
-                    <a href=""><img src="/images/model_afbeelding_shop_tops.jpg" alt="Model afbeelding voor shop tops"></img></a>
-                    <button>Shop Tops</button>
+                    <a href=""><img src="/images/model_afbeelding_shop_tops.jpg" alt="Model afbeelding voor shop tops"></img>Shop Tops</a>
                 </li>
                 <li>
-                    <a href=""><img src="/images/model_afbeelding_shop_jackets.jpg" alt="Model afbeelding voor shop jackets"></img></a>
-                    <button>Shop Jackets</button>
+                    <a href=""><img src="/images/model_afbeelding_shop_jackets.jpg" alt="Model afbeelding voor shop jackets"></img>Shop Jackets</a>
                 </li>
                 <li>
-                    <a href=""><img src="/images/model_afbeelding_shop_broeken.jpg" alt="Model afbeelding voor shop broeken"></img></a>
-                    <button>Shop Broeken</button>
+                    <a href=""><img src="/images/model_afbeelding_shop_broeken.jpg" alt="Model afbeelding voor shop broeken"></img>Shop Broeken</a>
                 </li>
                 <li>
-                    <a href=""><img src="/images/model_afbeelding_shop_jurken.jpg" alt="Model afbeelding voor shop jurken"></img></a>
-                    <button>Shop Jurken</button>
+                    <a href=""><img src="/images/model_afbeelding_shop_jurken.jpg" alt="Model afbeelding voor shop jurken"></img>Shop Jurken</a>
                 </li>
             </ul>
         </section>
@@ -219,30 +238,34 @@
     <footer>
 		<nav>
 			<ul>
-				<li>
-					<a href="">Help & FAQ</a>
-					<a href="">Bezorgingen</a>
-					<a href="">Retourneren</a>
-					<a href="">Privacy</a>
-					<a href="">Algemene voorwaarden</a>
-					<a href="">Actievoorwaarden</a>
-					<a href="">Vacatures</a>
-					<a href="">Reviews</a>
-					<a href="">Account verwijdering</a>
-				</li>
-				<li>
-					<a href=""><svg></svg></a>
-					<a href=""><svg></svg></a>
-					<a href=""><svg></svg></a>
-					<a href=""><svg></svg></a>
-					<a href=""><svg></svg></a>
-				</li>
+				
+					<li>
+						<a href="">Help & FAQ</a>
+						<a href="">Bezorgingen</a>
+						<a href="">Retourneren</a>
+						<a href="">Privacy</a>
+						<a href="">Algemene voorwaarden</a>
+						<a href="">Actievoorwaarden</a>
+						<a href="">Vacatures</a>
+						<a href="">Reviews</a>
+						<a href="">Account verwijdering</a>
+					</li>
+					<li>
+						<a href=""><svg></svg></a>
+						<a href=""><svg></svg></a>
+						<a href=""><svg></svg></a>
+						<a href=""><svg></svg></a>
+						<a href=""><svg></svg></a>
+					</li>
+				
 			</ul>
 		</nav>
 
     </footer>
+
+	<script defer src="scripts/script_algemeen.js"></script>
+	<script defer src="scripts/script_home.js"></script>
+	<!-- <script defer src="scripts/script_party.js"></script> -->
 </body>
-	<script defer src="/scripts/script_algemeen.js"></script>
-	<script defer src="/scripts/script_home.js"></script>
-	<script defer src="/scripts/script_party.js"></script>
+	
 </html>

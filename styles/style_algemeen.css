@@ -17,6 +17,8 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#fff;
+	--text-regular: "InterRegular";
+	--text-bold: "InterBold";
 }
 
 @font-face {
@@ -24,6 +26,15 @@
 	src: url(/fonts/Inter-Bold.woff2);
 }
 
+@font-face {
+	font-family: "InterRegular";
+	src: url(/fonts/Inter-Regular.woff2);
+}
+
+@font-face {
+	font-family: "InterSemiBold";
+	src: url(/fonts/Inter-SemiBold.woff2);
+}
 
 
 /****************/
@@ -33,47 +44,104 @@
 /* jouw code */
 
 
+
+
+body {
+	margin:0;
+}
+
 /****************/
 /* HEADER */
 /****************/
 header {
+	display:flex;
 	background-color: var(--color-background);
 	position:sticky;
   	top:0;
-	width:100vw;
-}
+	/* width:100vw; BAH */
 
-header h1 {
-	flex-shrink: 0;	
-}
+	padding:.5em;
 
-header h1 svg{
-	width:4em;
+	align-items: center;
+	justify-content: space-between	;
 }
 
 header li {
 	list-style:none;
 }
 
-nav{
-	display: flex;
-	background-color: var(--color-background);
-	justify-content: space-between ;
-	align-items:center;	
+/* Alle icons */
+header img {
+	width: 1.5em;
 }
 
-nav img{
-	width:1.5em;
+/* Logo Loavies */
+header h1 {
+	flex-shrink: 0;	
+	margin:0;
 }
+
+header h1 svg{
+	width:4em;
+}
+
+
+/****************/
+/* MENU */
+/****************/
 
 menu{
 	display:flex;
 }
 
-header ul{
-	display:flex;
-
+/* Hamburger menu */
+header menu {
+	margin:0;
+	padding: 0;
+	display: flex;
 }
+
+header menu li:nth-of-type(1) button {
+	position: relative;
+	z-index: 1;
+}
+
+header menu li:nth-of-type(1) button.is-open img {
+	content:url(../images/close_svgrepo_com.svg);
+}
+
+header nav{
+	display: flex;
+	background-color: var(--color-background);
+	font-family: var(--text-bold);
+	font-size: 0.7em;
+
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+
+	translate: -100% 0;
+	
+	transition:0.5s;
+}
+
+header nav.is-open {
+	translate: 0 0;
+}
+
+header > ul {
+	margin:0;
+	padding: 0;
+	display:flex;
+}
+/* Hamburger menu einde */
+
+
+/****************/
+/* FOOTER */
+/****************/
 
 footer ul{
 	height: 4em;
