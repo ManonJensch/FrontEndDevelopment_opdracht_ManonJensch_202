@@ -16,9 +16,15 @@
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#fff;
+	--color-background:#ffffff;
 	--text-regular: "InterRegular";
 	--text-bold: "InterBold";
+	--text-semibold: "InterSemiBold";
+
+	/*
+	color-scheme: light dark;
+	--icon-color:light-dark(black, white);*/
+
 }
 
 @font-face {
@@ -42,7 +48,6 @@
 /****************/
 
 /* jouw code */
-
 
 
 
@@ -71,7 +76,7 @@ header li {
 }
 
 /* Alle icons */
-header img {
+header svg {
 	width: 1.5em;
 }
 
@@ -87,7 +92,7 @@ header h1 svg{
 
 
 /****************/
-/* MENU */
+/* NAV MENU */
 /****************/
 
 menu{
@@ -99,6 +104,7 @@ header menu {
 	margin:0;
 	padding: 0;
 	display: flex;
+
 }
 
 header menu li:nth-of-type(1) button {
@@ -106,7 +112,7 @@ header menu li:nth-of-type(1) button {
 	z-index: 1;
 }
 
-header menu li:nth-of-type(1) button.is-open img {
+header menu li:nth-of-type(1) button.is-open svg {
 	content:url(../images/close_svgrepo_com.svg);
 }
 
@@ -114,8 +120,7 @@ header nav{
 	display: flex;
 	background-color: var(--color-background);
 	font-family: var(--text-bold);
-	font-size: 0.7em;
-
+	
 	position:fixed;
 	top:0;
 	bottom:0;
@@ -135,8 +140,16 @@ header > ul {
 	margin:0;
 	padding: 0;
 	display:flex;
+
 }
 /* Hamburger menu einde */
+
+
+/* Nav de opmaak */
+nav > a {
+	font-family: var(--text-bold);
+	font-size: 8em;
+}
 
 
 /****************/
@@ -145,7 +158,6 @@ header > ul {
 
 footer ul{
 	height: 4em;
-	width:100vw;
 }
 
 footer li {

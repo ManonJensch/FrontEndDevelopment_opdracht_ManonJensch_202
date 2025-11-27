@@ -5,30 +5,21 @@
   box-sizing:border-box;  
 }
 
-
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
+	--color-background:#ffffff;
 	--color-button: #111;
+	--color-text-button: #ffffff;
+	--text-regular: "InterRegular";
+	--text-bold: "InterBold";
+	--text-semibold: "InterSemiBold";
 }
 
 
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
 
 
 /****************/
@@ -48,44 +39,182 @@ section:nth-of-type(1) li{
 	flex-wrap:wrap;
 	justify-content:center;
 	flex-direction:column-reverse;	
-	
-	
-	
 }
+
 section:nth-of-type(1) img {
 	width:4em;
 	border-radius: 50%;
 	border: 3px solid #e0164a;
 }
 
+section:nth-of-type(1) p {
+	display: flex;
+	font-size: 0.7em;
+	justify-content: center;
+}
+
 main li{
 	list-style: none;
 }
 
+
+
 /****************/
-/* SECTIONS */
+/* MAIN SECTIONS */
 /****************/
 
-section:nth-of-type(2) img {
-	width:100vw;
+/* section nummer 2 */
+section:nth-of-type(2) ul{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	position: relative;
+	gap: 0.5em;
 }
 
+section:nth-of-type(2) li{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2fr;	
+	position: relative;
+}
 
-
-
-section:nth-of-type(3) img {
-	width:5em;
+section:nth-of-type(2) img {
+	width:100%;
+	height: auto;
 	display:flex;
 }
 
-/****************/
-/* SECTIONS */
-/****************/
+section:nth-of-type(2) a{
+	background-color: var(--color-button);
+	color: var(--color-text-button);
+	font-family: var(--text-semibold);
 
-p{
-	font-family: var(--text-regular);
+	text-decoration: none;
+	position: absolute;
+	top: 65%;
+	left: 22%;
+	padding: 1.5em 5em;
 }
 
-h3{
+section:nth-of-type(2) p {
+	display: flex;
+	justify-content: center;
+
 	font-family: var(--text-bold);
+	font-size: 0.7em;
+	color: var(--color-text-button);
+	background-color: var(--color-button);
+
+	padding: 1em 1em;
+	position: absolute;
+	top:18%;
+	width:100%;
+}
+
+
+/* section nummer 3 */
+section:nth-of-type(3) ul{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	position: relative;
+	gap: 0.5em;
+
+	padding: 0 0 0 6%;
+}
+
+section:nth-of-type(3) li{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2fr;	
+	position: relative;
+}
+
+
+section:nth-of-type(3) img {
+	width:12em;
+	height: auto;
+	display:flex;
+}
+
+section:nth-of-type(3) a{
+	background-color: var(--color-button);
+	color: var(--color-text-button);
+	font-family: var(--text-semibold);
+
+	text-decoration: none;
+	position: absolute;
+	top: 70%;
+	left: 20%;
+	padding: 1em 0.8em;
+}
+
+
+/* section nummer 4 */
+section:nth-of-type(4) ul {
+	display:flex;
+	padding: 0 0 0 6%;
+
+	overflow-x:auto;
+	flex-shrink:0;
+	gap:1em;
+}
+
+section:nth-of-type(4) img {
+	width:10em;
+	display:flex;
+}
+
+section:nth-of-type(4) li {
+	line-height: 60%;
+
+	flex-wrap:wrap;
+	justify-content:center;
+	flex-direction:column-reverse;	
+
+	position: relative;
+}
+
+section:nth-of-type(4) button {
+	width:2em;
+
+	position: absolute;
+	top: 60%;
+	left: 70%;
+	padding: 1em 0.8em;
+}
+
+section:nth-of-type(4) button svg {
+	width:1.5em;
+
+	position: absolute;
+	top:8%;
+	left: 5%;
+
+}
+
+
+
+
+/*******************/
+/* ALGEMENE DINGEN */
+/*******************/
+
+p {
+	font-family: var(--text-regular);
+	font-size: 0.6em;
+}
+
+h2 {
+	display: flex;
+	font-family: var(--text-bold);
+	justify-content: center;
+}
+
+h3 {
+	font-family: var(--text-bold);
+	font-size: 0.9em;
 }
