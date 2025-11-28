@@ -31,7 +31,6 @@ section:nth-of-type(1) ul {
 	overflow-x:auto;
 	flex-shrink:0;
 	gap:1em;
-	
 }
 
 section:nth-of-type(1) li{
@@ -39,6 +38,7 @@ section:nth-of-type(1) li{
 	flex-wrap:wrap;
 	justify-content:center;
 	flex-direction:column-reverse;	
+	
 }
 
 section:nth-of-type(1) img {
@@ -53,8 +53,14 @@ section:nth-of-type(1) p {
 	justify-content: center;
 }
 
+section:nth-of-type(1) a {
+	text-decoration: none;
+	
+}
+
 main li{
 	list-style: none;
+	
 }
 
 
@@ -169,7 +175,7 @@ section:nth-of-type(4) img {
 }
 
 section:nth-of-type(4) li {
-	line-height: 60%;
+	line-height: 75%;
 
 	flex-wrap:wrap;
 	justify-content:center;
@@ -205,7 +211,7 @@ section:nth-of-type(4) button svg {
 
 p {
 	font-family: var(--text-regular);
-	font-size: 0.6em;
+	font-size: 0.7em;
 }
 
 h2 {

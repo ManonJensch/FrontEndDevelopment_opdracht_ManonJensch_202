@@ -170,15 +170,32 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Het ging eigenlijk wel echt lekker. Ik had alleen af en toe een vraag voer hoe ik dan bijvoorbeeld mijn linkje van Shop Tops, meer op de foto kon krijgen. Eerst stond de afbeelding in de link met de tekst, maar toen heb ik samen met een studentassistent er naar gekeken en hij zei dat het beter was als ik de afbeelding uit het linkje haalde. Hierdoor konden we makkelijker met position relative en absolute aan de gang en is et dus ok uiteindelijk gelukt. Ik heb zelf de juiste positie gekozen en het ook op andere dingen toegevoegd, want ik had het op meerdere plekken nodig. Hieronder staan screenshots van waar ik ongeveer in week 2 was en waar ik nu in week 3 ben. Verder zie je ook een screenshot van het probleem waar ik tegen aan ben gelopen. Omdat ik op meerdere plekken z-index heb gebruikt denk ik dat er iets niet klopt, want ik heb dus dat sommige elementen over mijn menu heen komt. 
+  <img src="/readme-images/voortgang_week2-3_ss1.png" width="150px" alt="Screenshot van waar ik was in de tweede week ongeveer">
+  <img src="/readme-images/voortgang_week2-3_ss2.png" width="150px" alt="Screenshot van waar ik ben in de derde week ongeveer">
+  <img src="/readme-images/menu_probleem.png" width="150px" alt="Screenshot van het probleem met mijn menu">
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
+ 
+  Manon     
+  - Menu close icon fiksen, nadat ik er een svg van heb gemaakt.
+  - In het menu komen ook andere elementen naar voren terwijl dat helemaal niet moet. Dat komt waarschijnlijk dan door een z-index ergens. 
+  - Dark modus, kijken of ik het goed heb gedaan?
+  - De prijs moet bold worden, maar er staat 2x p. Hoe kan ik dit het beste oplossen?
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+
+  Gloria    
+  - ik heb een vraag over over postioneren, (relative absolute)
+  - :root light en dark mode gebruiken
+  - ruimte verwijderen in footer        
+  
+  Bob          
+
+ 
+  Rosa             
+ 
 
 
   ### Verslag van meeting
