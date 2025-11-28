@@ -195,7 +195,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
  
   Rosa             
- 
+  - Datums in mijn tekst verwerken
 
 
   ### Verslag van meeting

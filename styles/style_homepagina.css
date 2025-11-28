@@ -199,8 +199,8 @@ section:nth-of-type(4) button svg {
 	position: absolute;
 	top:8%;
 	left: 5%;
-
 }
+
 
 
 
@@ -212,6 +212,7 @@ section:nth-of-type(4) button svg {
 p {
 	font-family: var(--text-regular);
 	font-size: 0.7em;
+
 }
 
 h2 {
