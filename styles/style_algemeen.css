@@ -1,3 +1,59 @@
+/*********************/
+/* FONTS */
+/*********************/
+@font-face {
+	font-family: "Inter";
+	font-weight: 700;
+	src: url('/fonts/Inter-Bold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: "Inter";
+	font-weight: 400;
+	src: url('/fonts/Inter-Regular.woff2') ('woff2');
+}
+
+@font-face {
+	font-family: "Inter";
+	font-weight: 600;
+	src: url('/fonts/Inter-SemiBold.woff2') ('woff2');
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	color-scheme: light dark;
+	--icon-color: #111;
+	--header-background-color: #ffffff;
+
+	--color-text:#111;
+	--color-background:#ffffff;
+	--color-scheidingslijn: #848484;
+
+}
+
+
+html [data-theme='light']{
+	--icon-color: #111;
+	--header-background-color: #ffffff;
+
+	--color-text:#111;
+	--color-background:#ffffff;
+	--color-scheidingslijn: #848484;
+}
+
+
+html [data-theme='dark']{
+	--icon-color: #ffffff;
+	--header-background-color: #111;
+
+	--color-text: #ffffff;
+	--color-background:#111;
+	--color-scheidingslijn: #848484;
+}
+
+
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -10,38 +66,9 @@
 
 
 
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#ffffff;
-	--color-scheidingslijn: #848484;
-	--text-regular: "InterRegular";
-	--text-bold: "InterBold";
-	--text-semibold: "InterSemiBold";
 
-	/*
-	color-scheme: light dark;
-	--icon-color:light-dark(black, white);*/
 
-}
 
-@font-face {
-	font-family: "InterBold";
-	src: url(/fonts/Inter-Bold.woff2);
-}
-
-@font-face {
-	font-family: "InterRegular";
-	src: url(/fonts/Inter-Regular.woff2);
-}
-
-@font-face {
-	font-family: "InterSemiBold";
-	src: url(/fonts/Inter-SemiBold.woff2);
-}
 
 
 /****************/
@@ -50,11 +77,35 @@
 
 /* jouw code */
 
+p {
+	font-size: 0.7em;
 
+}
+
+h2 {
+	display: flex;
+	justify-content: center;
+}
+
+h3 {
+	font-size: 0.9em;
+}
 
 body {
 	margin:0;
+	font-family: "Inter", sans-serif;
+
+	background-color: #ffffff;
+
+	
 }
+
+@media (prefers-color-scheme: dark){
+	body {
+	background-color: black;
+	}
+}
+
 
 /****************/
 /* HEADER */
@@ -70,6 +121,12 @@ header {
 
 	align-items: center;
 	justify-content: space-between	;
+	z-index:2;
+
+	background-color: white;
+	@media (prefers-color-scheme: dark){
+		background-color: black;
+	}
 }
 
 header li {
@@ -81,6 +138,14 @@ header svg {
 	width: 1.5em;
 }
 
+header img {
+	width: 1.5em;
+	@media (prefers-color-scheme:dark){
+		filter:invert(1);
+	}
+} 
+
+
 /* Logo Loavies */
 header h1 {
 	flex-shrink: 0;	
@@ -90,6 +155,7 @@ header h1 {
 header h1 svg{
 	width:4em;
 }
+
 
 
 /****************/
@@ -113,7 +179,7 @@ header menu li:nth-of-type(1) button {
 	z-index: 1;
 }
 
-header menu li:nth-of-type(1) button.is-open svg {
+header menu li:nth-of-type(1) button.is-open img {
 	content:url(../images/close_svgrepo_com.svg);
 }
 
@@ -148,7 +214,6 @@ header > ul {
 
 /* Nav de opmaak */
 header nav > a {
-	font-family: var(--text-bold);
 	font-size: 8em;
 }
 
@@ -160,7 +225,6 @@ header nav > a {
 /****************/
 footer{
 	display: flex;
-
 	font-size: 0.7em;
 }
 
@@ -180,8 +244,6 @@ footer nav ul:nth-of-type(1) {
 	display:flex;
 	flex-direction: column;
 	line-height: 150%;
-
-	font-family: var(--text-regular);
 }
 
 footer nav ul:nth-of-type(2) {
@@ -190,11 +252,7 @@ footer nav ul:nth-of-type(2) {
 	gap: 1em;
 }
 
-
-hr{
-	background-color: var(--color-scheidingslijn);
-	width: 400%;
-	height: 1px;
-	margin-left: auto;
-	margin-right: auto;
+.visually-hidden{
+	position: absolute;
+	left: -999em;
 }

@@ -192,7 +192,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - ruimte verwijderen in footer        
   
   Bob          
-
+  - Vraag over animeren van de slideshow van de Heineken.
  
   Rosa             
   - Datums in mijn tekst verwerken

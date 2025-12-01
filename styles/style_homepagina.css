@@ -14,9 +14,6 @@
 	--color-background:#ffffff;
 	--color-button: #111;
 	--color-text-button: #ffffff;
-	--text-regular: "InterRegular";
-	--text-bold: "InterBold";
-	--text-semibold: "InterSemiBold";
 }
 
 
@@ -95,7 +92,6 @@ section:nth-of-type(2) img {
 section:nth-of-type(2) a{
 	background-color: var(--color-button);
 	color: var(--color-text-button);
-	font-family: var(--text-semibold);
 
 	text-decoration: none;
 	position: absolute;
@@ -108,7 +104,6 @@ section:nth-of-type(2) p {
 	display: flex;
 	justify-content: center;
 
-	font-family: var(--text-bold);
 	font-size: 0.7em;
 	color: var(--color-text-button);
 	background-color: var(--color-button);
@@ -149,7 +144,6 @@ section:nth-of-type(3) img {
 section:nth-of-type(3) a{
 	background-color: var(--color-button);
 	color: var(--color-text-button);
-	font-family: var(--text-semibold);
 
 	text-decoration: none;
 	position: absolute;
@@ -205,23 +199,9 @@ section:nth-of-type(4) button svg {
 
 
 
-/*******************/
-/* ALGEMENE DINGEN */
-/*******************/
 
-p {
-	font-family: var(--text-regular);
-	font-size: 0.7em;
 
-}
 
-h2 {
-	display: flex;
-	font-family: var(--text-bold);
-	justify-content: center;
-}
 
-h3 {
-	font-family: var(--text-bold);
-	font-size: 0.9em;
-}
+
+/* font-family hoeft ik niet meer te gebruiken, gebruikt dan font-family:inherit; op het element zoals de body bijvoorbeeld. */
