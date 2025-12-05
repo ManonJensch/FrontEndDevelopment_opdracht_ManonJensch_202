@@ -8,13 +8,7 @@
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#ffffff;
-	--color-button: #111;
-	--color-text-button: #ffffff;
-}
+
 
 
 
@@ -31,10 +25,10 @@ section:nth-of-type(1) ul {
 }
 
 section:nth-of-type(1) li{
-	display:flex;
+	display:inline-block;
 	flex-wrap:wrap;
 	justify-content:center;
-	flex-direction:column-reverse;	
+	flex-direction:column;	
 	
 }
 
@@ -42,22 +36,31 @@ section:nth-of-type(1) img {
 	width:4em;
 	border-radius: 50%;
 	border: 3px solid #e0164a;
+	order:-1;
 }
 
-section:nth-of-type(1) p {
-	display: flex;
-	font-size: 0.7em;
-	justify-content: center;
-}
-
+/* hoe kan ik in mijn atje de tekst kleine maken zonder dat mijn foto kleiner wordt */
 section:nth-of-type(1) a {
 	text-decoration: none;
-	
+	color:#111;
+	font-size: 0.9em;
+
+	display:flex;
+	flex-direction: column;
+
+	@media (prefers-color-scheme:dark){
+		color:#ffffff;
+	}
 }
 
 main li{
-	list-style: none;
+	list-style-type: none;
 	
+}
+
+section:nth-of-type(1) ul li a span{
+	display:flex;
+	order: 2;
 }
 
 
@@ -98,7 +101,12 @@ section:nth-of-type(2) a{
 	top: 65%;
 	left: 22%;
 	padding: 1.5em 5em;
+
+
+
 }
+
+
 
 section:nth-of-type(2) p {
 	display: flex;
@@ -112,6 +120,9 @@ section:nth-of-type(2) p {
 	position: absolute;
 	top:18%;
 	width:100%;
+
+
+
 }
 
 
@@ -150,6 +161,8 @@ section:nth-of-type(3) a{
 	top: 70%;
 	left: 20%;
 	padding: 1em 0.8em;
+
+	
 }
 
 
@@ -195,11 +208,17 @@ section:nth-of-type(4) button svg {
 	left: 5%;
 }
 
+section:nth-of-type(4) a{
+	text-decoration: none;
+}
 
 
 
+button {
+background-color: var(--background-color) ;
 
-
+	
+}
 
 
 

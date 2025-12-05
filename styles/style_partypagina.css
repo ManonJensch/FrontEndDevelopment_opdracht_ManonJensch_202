@@ -13,11 +13,6 @@
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-}
 
 
 
@@ -28,4 +23,145 @@
 /****************/
 
 /* jouw code */
+
+h2 {
+	display: flex;
+	justify-content: center;
+
+	font-size: 0.9em;
+	color: var(--color-text);
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+
+section li {
+	list-style-type: none;
+}
+
+
+/* section 1 */
+section:nth-of-type(1) svg {
+	width: 1em;
+	height:auto;
+
+	color: var(--color-text);
+	@media (prefers-color-scheme:dark){
+		filter:invert(1);
+	}
+}
+
+section:nth-of-type(1){
+	display:flex;
+
+	justify-content: center;
+	gap:17em;
+}
+
+section:nth-of-type(1) ul{
+	display:flex;
+	flex-direction: row;
+
+	align-items: center;
+	justify-content: center;
+
+	gap: 0.5em;
+}
+
+
+/* section 2 */
+section:nth-of-type(2) ul {
+	display:flex;
+	overflow-x:auto;
+	flex-shrink:0;
+	gap:1.5em;
+	
+}
+
+section:nth-of-type(2) li{
+	display:inline-block;
+	flex-wrap:wrap;
+	justify-content:center;
+	flex-direction:column-reverse;	
+	white-space: nowrap;
+}
+
+section:nth-of-type(2) img {
+	width:4em;
+	border-radius: 50%;
+	border: 3px solid #e0164a;
+}
+
+
+section:nth-of-type(2) a {
+	text-decoration: none;
+	color:var(--color-text);
+	font-size: 0.9em;
+
+	justify-content: center;
+
+	
+}
+
+
+
+/* section 3 */
+section:nth-of-type(3) ul{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	gap: 0.5em;
+
+	padding: 0 0 0 6%;
+}
+
+section:nth-of-type(3) li{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2fr;	
+}
+
+
+section:nth-of-type(3) img {
+	width:12em;
+	height: auto;
+	display:flex;
+}
+
+section:nth-of-type(3) button {
+	width:2em;
+
+	position: absolute;
+	left:40%;
+	top:43%;
+	padding: 1em 0.8em;
+}
+
+section:nth-of-type(3) button svg {
+	width:1.5em;
+
+	position: absolute;
+	top:19%;
+	left:9%;
+}
+
+
+
+
+
+section:nth-of-type(4){
+	background-color: var(--background-party-outfit-kopen);
+	padding: 0 5%;
+}
+
+section:nth-of-type(4) h2{
+	font-size: 2em;
+	margin:0;
+	display:block;
+}
 

@@ -25,33 +25,28 @@
 :root {
 	color-scheme: light dark;
 	--icon-color: #111;
-	--header-background-color: #ffffff;
+	--background-color: #ffffff;
 
 	--color-text:#111;
-	--color-background:#ffffff;
-	--color-scheidingslijn: #848484;
+	--background-party-outfit-kopen: #eee;
+	--color-button:#111;
+	--color-text-button:#ffffff;
 
 }
 
-
-html [data-theme='light']{
-	--icon-color: #111;
-	--header-background-color: #ffffff;
-
-	--color-text:#111;
-	--color-background:#ffffff;
-	--color-scheidingslijn: #848484;
+@media (prefers-color-scheme:dark){
+	:root {
+		color-scheme: light dark;
+		--icon-color: #ffffff;
+		--background-color: #111;
+		
+		--color-text:#ffffff;
+		--background-party-outfit-kopen: #434343;
+		--color-button:#ffffff;
+		--color-text-button:#111;
+	}
 }
 
-
-html [data-theme='dark']{
-	--icon-color: #ffffff;
-	--header-background-color: #111;
-
-	--color-text: #ffffff;
-	--color-background:#111;
-	--color-scheidingslijn: #848484;
-}
 
 
 /**************/
@@ -62,15 +57,6 @@ html [data-theme='dark']{
 }
 
 
-
-
-
-
-
-
-
-
-
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -79,32 +65,39 @@ html [data-theme='dark']{
 
 p {
 	font-size: 0.7em;
-
+	color: var(--color-text);
 }
 
 h2 {
 	display: flex;
 	justify-content: center;
+	color: var(--color-text);
 }
 
 h3 {
 	font-size: 0.9em;
+	color: var(--color-text);
 }
 
 body {
 	margin:0;
 	font-family: "Inter", sans-serif;
 
-	background-color: #ffffff;
-
-	
+	background-color: var(--background-color);
 }
 
-@media (prefers-color-scheme: dark){
-	body {
-	background-color: black;
+svg{
+	@media (prefers-color-scheme:dark){
+		filter:invert(1);
 	}
 }
+
+button {
+	appearance: none;
+	border: none;
+}
+
+
 
 
 /****************/
@@ -112,7 +105,7 @@ body {
 /****************/
 header {
 	display:flex;
-	background-color: var(--color-background);
+	background-color: var(--background-color);
 	position:sticky;
   	top:0;
 	/* width:100vw; BAH */
@@ -122,11 +115,6 @@ header {
 	align-items: center;
 	justify-content: space-between	;
 	z-index:2;
-
-	background-color: white;
-	@media (prefers-color-scheme: dark){
-		background-color: black;
-	}
 }
 
 header li {
@@ -134,16 +122,24 @@ header li {
 }
 
 /* Alle icons */
+
+/************************** vraag over svg kleur veranderen ?????? ******************************/
 header svg {
 	width: 1.5em;
+
+	color: #111;
+	@media (prefers-color-scheme:dark){
+		filter:invert(1);
+	}
 }
 
-header img {
+header menu img {
 	width: 1.5em;
 	@media (prefers-color-scheme:dark){
 		filter:invert(1);
 	}
 } 
+
 
 
 /* Logo Loavies */
@@ -187,6 +183,8 @@ header nav{
 	display: flex;
 	background-color: var(--color-background);
 	font-family: var(--text-bold);
+	font-size: 0.9em;
+	line-height: 250%;
 	
 	position:fixed;
 	top:0;
@@ -199,18 +197,43 @@ header nav{
 	transition:0.5s;
 }
 
+header img{
+	width: 100%;
+	margin:0;
+	padding:0;
+}
+
 header nav.is-open {
 	translate: 0 0;
 }
-
-header > ul {
+header ul {
 	margin:0;
-	padding: 0;
+	padding: 0 0;
 	display:flex;
 
 }
-/* Hamburger menu einde */
 
+header nav ul {
+	margin-top: 3em;
+	display: flex;
+	flex-direction: column;
+
+}
+header nav ul li{
+	margin:0;
+	padding: 0 1em;
+}
+
+/* header nav ul li:nth-of-type(1){
+	position:;a
+} */
+
+header nav ul li:nth-of-type(2){
+	margin:0;
+	padding: 0 0;
+}
+
+/* Hamburger menu einde */
 
 /* Nav de opmaak */
 header nav > a {
@@ -226,6 +249,11 @@ header nav > a {
 footer{
 	display: flex;
 	font-size: 0.7em;
+}
+
+footer a{
+	color:var(--color-text);
+	text-decoration: none;
 }
 
 footer ul {
@@ -255,4 +283,37 @@ footer nav ul:nth-of-type(2) {
 .visually-hidden{
 	position: absolute;
 	left: -999em;
+}
+
+/****************/
+/* TOEGANKELIJKHEID */
+/****************/
+a:focus {
+	border: solid 2px;
+	border-color: #e0164a;
+}
+
+a:active {
+	border:solid 2px;
+	border-color: #e0164a;
+}
+
+a:hover {
+	border:solid 2px;
+	border-color: #e0164a;
+}
+
+button:focus {
+	background-color: pink;
+	color:#111;
+}
+
+button:active {
+	background-color: pink;
+	color:#111;
+}
+
+button:hover {
+	border:solid 2px;
+	border-color: #e0164a;
 }
