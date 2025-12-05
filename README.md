@@ -148,7 +148,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  hier na afloop snel de uitkomsten van de meeting vastleggen. We hebben deze week het gesprek samen met de studentassistenten gehad. 
 
   - Ik moet betere alt teksten neerzetten. Ik moet het aan de hand van een zin uitleggen. Ik zou hiervoor ook chatGPT mogen gebruiken.
   - Mijn code is al goed ingesprongen en ik was daarmee ook lekker bezig. 
@@ -199,12 +199,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  hier na afloop snel de uitkomsten van de meeting vastleggen. We hebben deze week het gesprek samen met Sanne gehad. 
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Z-index header 2 proberen. Hiermeer zorg je ervoor dat je header boven alles komt te staan waardoor alle andere elementen erachter vallen. 
+  - Svg heeft geen source img gebruiken voor menu icon.
+  - Button img inverten filter. Hierdoor wordt hij wel van kleur geswitched, als je naar dark modus gaat.Dat doe je met: @media en filter: invert
+  - Hoe ik nog steeds trong kon gebruiken en hoe ik dan het stukje van de prijs kon aanpassen naar een dikker lettertype. Dat kan zo: strong selecteren. Font weight 700 bold, 400 regular, 600 semi bold
 
 </details>
 
@@ -238,20 +238,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+   Manon     
+  - blauwe rand van de focus weghalen
+  - grid icon op party pagina
+  - favorieten hartje op de party pagina verplaatsen
+  - Surface plane, welke elementen ik al heb, wat houdt elk ding percies in. 
+  - Micro interactie maken op de favorieten button???
+
+
+  Gloria    
+        
+  
+  Bob          
+  
+ 
+  Rosa             
+  
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  hier na afloop snel de uitkomsten van de meeting vastleggen. We hebben deze week het gesprek samen met de studentassistenten gehad. 
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - 
 
 </details>
 
@@ -293,8 +301,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
+  1. Studentassistenten
+  2. 
   3. ...
 
 </details>

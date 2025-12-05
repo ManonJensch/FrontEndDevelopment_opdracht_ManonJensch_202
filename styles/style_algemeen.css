@@ -58,10 +58,8 @@
 
 
 /****************/
-/* JOUW STYLING */
+/* ALGEMENE DINGEN */
 /****************/
-
-/* jouw code */
 
 p {
 	font-size: 0.7em;
@@ -122,8 +120,6 @@ header li {
 }
 
 /* Alle icons */
-
-/************************** vraag over svg kleur veranderen ?????? ******************************/
 header svg {
 	width: 1.5em;
 
@@ -134,13 +130,11 @@ header svg {
 }
 
 header menu img {
-	width: 1.5em;
+	width: 1.8em;
 	@media (prefers-color-scheme:dark){
 		filter:invert(1);
 	}
 } 
-
-
 
 /* Logo Loavies */
 header h1 {
@@ -155,7 +149,7 @@ header h1 svg{
 
 
 /****************/
-/* NAV MENU */
+/* HAMBURGER MENU */
 /****************/
 
 menu{
@@ -181,7 +175,7 @@ header menu li:nth-of-type(1) button.is-open img {
 
 header nav{
 	display: flex;
-	background-color: var(--color-background);
+	background-color: var(--background-color);
 	font-family: var(--text-bold);
 	font-size: 0.9em;
 	line-height: 250%;
@@ -224,21 +218,16 @@ header nav ul li{
 	padding: 0 1em;
 }
 
-/* header nav ul li:nth-of-type(1){
-	position:;a
-} */
-
 header nav ul li:nth-of-type(2){
 	margin:0;
 	padding: 0 0;
 }
 
-/* Hamburger menu einde */
-
-/* Nav de opmaak */
 header nav > a {
 	font-size: 8em;
 }
+/* Hamburger menu einde */
+
 
 
 
@@ -265,7 +254,7 @@ footer li {
 }
 
 footer svg {
-	width: 1.5em;
+	width: 1.8em;
 }
 
 footer nav ul:nth-of-type(1) {
