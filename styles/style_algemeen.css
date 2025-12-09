@@ -31,6 +31,13 @@
 	--background-party-outfit-kopen: #eee;
 	--color-button:#111;
 	--color-text-button:#ffffff;
+	--toegankelijkheid-background-color:pink;
+	--toegankelijkheid-outline-color:#e0164a;
+	--toegankelijkheid-active-text-color: #434343;
+	--hart-kleur: #c00000;
+
+	--whitespace:clamp(1.25em, 5vw, 2em);
+	--kerst-button: rgb(11, 211, 11);
 
 }
 
@@ -44,8 +51,16 @@
 		--background-party-outfit-kopen: #434343;
 		--color-button:#ffffff;
 		--color-text-button:#111;
+		--toegankelijkheid-background-color:#e0164a;
+		--toegankelijkheid-outline-color:pink;
+		--toegankelijkheid-active-text-color: #6b6b6b;
+		--hart-kleur: #c00000;
+
+		--whitespace:clamp(1.25em, 5vw, 2em);
 	}
 }
+
+
 
 
 
@@ -93,6 +108,7 @@ svg{
 button {
 	appearance: none;
 	border: none;
+	background-color: var(--background-color);
 }
 
 
@@ -156,6 +172,10 @@ menu{
 	display:flex;
 }
 
+menu li button{
+	background-color:var(--background-color) ;
+}
+
 /* Hamburger menu */
 header menu {
 	margin:0;
@@ -174,12 +194,13 @@ header menu li:nth-of-type(1) button.is-open img {
 }
 
 header nav{
-	display: flex;
+	display: grid;
 	background-color: var(--background-color);
 	font-family: var(--text-bold);
 	font-size: 0.9em;
 	line-height: 250%;
 	
+
 	position:fixed;
 	top:0;
 	bottom:0;
@@ -189,6 +210,8 @@ header nav{
 	translate: -100% 0;
 	
 	transition:0.5s;
+
+	overflow-y:auto ;
 }
 
 header img{
@@ -226,6 +249,21 @@ header nav ul li:nth-of-type(2){
 header nav > a {
 	font-size: 8em;
 }
+
+header nav form{
+	display: flex;
+	font-family: "inherit", sans-serif;
+
+}
+
+header nav form select{
+	display: flex;
+	font-family: "inherit", sans-serif;
+	height: 2em;
+	margin: 1em;
+	width:30em;
+}
+
 /* Hamburger menu einde */
 
 
@@ -246,7 +284,8 @@ footer a{
 }
 
 footer ul {
-	padding:0 0 0 30%;
+	padding:0 0 0 15%;
+	line-height: 300%;
 }
 
 footer li {
@@ -260,7 +299,7 @@ footer svg {
 footer nav ul:nth-of-type(1) {
 	display:flex;
 	flex-direction: column;
-	line-height: 150%;
+	line-height: 300%;
 }
 
 footer nav ul:nth-of-type(2) {
@@ -269,40 +308,84 @@ footer nav ul:nth-of-type(2) {
 	gap: 1em;
 }
 
+
 .visually-hidden{
-	position: absolute;
-	left: -999em;
+	clip:rect(0 0 0 0);
+	clip-path:inset(50%);
+	height: 1px;
+	overflow:hidden;
+	position:absolute;
+	white-space: nowrap;
+	width: 1px;
 }
 
 /****************/
 /* TOEGANKELIJKHEID */
 /****************/
-a:focus {
-	border: solid 2px;
-	border-color: #e0164a;
+
+a{
+	transition:0.25s ease;
+	color:var(--color-text);
+	
+}
+
+
+:focus {
+	outline: solid 3px var(--toegankelijkheid-outline-color);
+	outline-offset: 2px;
 }
 
 a:active {
 	border:solid 2px;
-	border-color: #e0164a;
+	border-color: var(--toegankelijkheid-outline-color);
+	color:var(--toegankelijkheid-active-text-color);
 }
 
-a:hover {
-	border:solid 2px;
-	border-color: #e0164a;
-}
-
-button:focus {
-	background-color: pink;
-	color:#111;
+a:hover {	
+	scale:1.1;
 }
 
 button:active {
-	background-color: pink;
+	background-color: var(--toegankelijkheid-background-color);
 	color:#111;
 }
 
 button:hover {
-	border:solid 2px;
-	border-color: #e0164a;
+	background-color:var(--toegankelijkheid-background-color);
+} 
+
+::selection{
+	background-color:var(--toegankelijkheid-background-color);
 }
+
+
+/******************************/
+/* Favorieten hartje animatie */
+/******************************/
+
+@keyframes hartslag-animation {
+	0% { scale:1; }
+	5% { scale:.7; }
+	10% { scale:1.5; }
+	15% { scale:.7; }
+	20% { scale:1.5; }
+	25% { scale:.7; }
+	30% { scale:1; }
+	100% { scale:1; }
+  }
+  
+  /* met hulp van Anne en codepen */
+  ul li[aria-label="hartslag favorieten button"]:active article button svg {
+	animation-name:hartslag-animation;
+	animation-duration:1.5s;
+	animation-iteration-count:infinite;
+	will-change:transform;
+	fill: var(--hart-kleur); /* << HIER */
+
+	z-index: 10;
+  }
+
+  ul li[aria-label="hartslag favorieten button"].is-open {
+	fill: var(--hartkleur, red); /* << EN HIER */
+  }
+  /* einde hulp */

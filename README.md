@@ -106,6 +106,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### dynamisch deel party pagina(bijv menu): 
   <img src="/readme-images/party_pagina_breakdownschets_detail.jpg" width="150px" alt="breakdown van een dynamisch deel van de party pagina">
 
+  ### hamburger menu: 
+  <img src="/readme-images/hamburger_menu_breakdownschets.jpg" width="150px" alt="breakdown van de party pagina">
+
 </details>
 
 
@@ -218,8 +221,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  #### Screenreader:
+  - De headings staan nu wel op volgorde.
+  - De navigatie links zijn in kleine letters geschreven.
+  - De uitleg van knoppen zijn ook in kleine letters geschreven.  
+
+
+  <img src="/readme-images/toegankelijkheid2.png" width="150px" alt="Screenshot van screenreader linkjes lijst">
+  Afbeelding 2.1
+  <img src="/readme-images/toegankelijkheid2.2.png" width="150px" alt="Screenshot van screenreader koppen lijst">
+  Afbeelding 2.2
+  
+
+  #### Web Content Accessibility Guidelines:
+  - Ik heb elke pagina een goede titel gegeven.
+  - Je kan nu ook met tab door alle linkjes heen en dat was eerst niet het geval.
+  - De headings zijn nu logischer en semantischer. Alles staat nu weer op mooie volgorde.
+  - Ik heb een focus state toegevoegd.
+  - Ik heb button elementen toegevoegd.
+  - Ik heb ook de ::selection aangepast naar roze. Deze was eerst nog blauw.
 </details>
 
 
@@ -247,19 +269,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   Gloria    
-        
+  - wanneer % en wanneer em gebruiken
+  - h2 centreren bij gekleurde kopjes (doe het nu met left)
+  - text animatie laten sliden met keyframes
+  - padding 4 of 2 waardes
   
   Bob          
-  
+  - Hoe kan ik een carrousel op de perfecte manier gebruiken en in mijn website verwerken.
  
   Rosa             
-  
+  - Padding gerbuikern, zonder echt padding te gebruiken.
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen. We hebben deze week het gesprek samen met de studentassistenten gehad. 
 
-  - 
+  - hartjes button kan animeren, kijk naar de opdracht 
+  - opdracht bekijken voor de hartjes favorieten op de party pagina
+  - Blauwe focus randje kan je met outline weghalen
+  - Surface plane, animeren en custom theme toevoegen. 
 
 </details>
 
@@ -273,19 +301,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="readme-images/home_pagina_definitief.png" width="150px" alt="uitomst opdracht 1 - Home pagina">
+  <img src="readme-images/party_pagina_definitief.png" width="150px" alt="uitomst opdracht 1 - Party pagina">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Van alles wat ik geleerd heb zijn dit toch wel de belangrijkste puntjes:
+  - Grid en positions. hoe ik dingen kan positioneren etc. 
+  - Aria-labels gebruiken.
+  - Hoe ik een hartje zou kunnen animeren. 
+  - Hoe ik hierbij dan keyframes moet gebruiken.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/screenshot_wathebikgeleerd.png" width="100px" alt="Wat ik heb geleerd">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik had nog wel heel graag misschien bij mijn kerstbutton of een video willen laten verschijnen met sneeuwvlokken. Dit was in principe gelukt, alleen lukte het niet om een transparante video te vinden of te maken. Of ik had er wel een custom theme van willen maken. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
@@ -301,8 +332,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. Studentassistenten
-  2. 
-  3. ...
+  1. Studentassistenten. 
+  2. Voor het openen van een link op een nieuw tabblad. https://kinsta.com/nl/blog/zo-maak-je-een-link-klikbaar/#:~:text=Link%20openen%20in%20nieuw%20tabblad%20met%20HTML&text=Vervang%20%E2%80%9CLink%20Text%E2%80%9D%20door%20de,nieuw%20tabblad%20te%20laten%20openen. 
+  3. Anne af en toe met animatie maken bijvoorbeeld.
+  4. Hulp van ChatGpt bij het maken van de button voor de muziek. (ChatGPT 9-12-2025) https://chatgpt.com/c/69380171-6820-832c-bf74-884025aa1b51
+  5. video link van kerstmuziek. https://www.youtube.com/watch?v=R1gskElaLNo&list=RDR1gskElaLNo&start_radio=1.
 
+  <img src="readme-images/screenshot_chatgpt.png" width="100" alt="bummer">
+  <img src="readme-images/screenshot_chatgpt2.png" width="100" alt="bummer">
 </details>
