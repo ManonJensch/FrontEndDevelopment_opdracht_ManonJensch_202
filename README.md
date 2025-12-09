@@ -242,6 +242,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Ik heb een focus state toegevoegd.
   - Ik heb button elementen toegevoegd.
   - Ik heb ook de ::selection aangepast naar roze. Deze was eerst nog blauw.
+
+
+
+  <img src="/readme-images/WCAG1.png" width="100px" alt="WCAG pagina 1">  
+  <img src="/readme-images/WCAG2.png" width="100px" alt="WCAG pagina 2">  
+  <img src="/readme-images/WCAG3.png" width="100px" alt="WCAG pagina 3">  
+  <img src="/readme-images/WCAG4.png" width="100px" alt="WCAG pagina 4">  
+  <img src="/readme-images/WCAG5.png" width="100px" alt="WCAG pagina 5">  
+
 </details>
 
 
